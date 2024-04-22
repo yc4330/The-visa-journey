@@ -93,6 +93,7 @@ code {
     }
 }
 
+
 /* for buttons */
 .choices {
     display: none; /* Initially hide all choices */
@@ -112,6 +113,7 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
   margin-bottom: 20px;
+  width: 320px;
 }
 
 button:hover {
@@ -137,7 +139,7 @@ button:hover {
   }
   
   .active, .collapsible:hover {
-    background-color: #9900ff;
+    background-color: #9a56c4;
   }
   
   .collapsible-text {
@@ -145,4 +147,22 @@ button:hover {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+  }
+
+
+.container {
+    display: flex; /* 启用Flexbox布局 */
+    flex-direction: column; /* 元素垂直排列 */
+    align-items: center; /* 中心对齐所有元素 */
+  }
+  .textbox {
+    width: 300px; /* 设置文本框宽度 */
+    margin: 10px 0; /* 上下外边距 */
+    padding: 20px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    text-align: center; /* 文本居中 */
+  }
+  .equal-height {
+    display: flex; /* 启用Flexbox布局 */
+    align-items: stretch; /* 使所有子元素高度相同 */
   }

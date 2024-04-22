@@ -104,7 +104,7 @@
 
         <div>
             <div class="button-container">
-                <button onclick="showNextChoice(this)">Start</button>
+                <button onclick="showNextChoice(this)">Start the journey</button>
             </div>
         </div>
 
@@ -159,21 +159,17 @@
             </p>
             <p>What do you do?</p>
             <div class="button-container">
-                <button class="button" onclick="showNextChoice(this); showText1(this)">Attend the conference</button>
-                <button class="button" onclick="showNextChoice(this); showText2(this)">Stay in the lab</button>
+                <button class="button button1" onclick="showNextChoice(this); showText1(this)">Attend the conference</button>
+                <button class="button button2" onclick="showNextChoice(this); showText2(this)">Stay in the lab</button>
             </div>
-            <div class="div1 hidden">
-                <p>
-                    But you have heard that some Chinese students' visas are canceled without warning. If you depart the
-                    United States, you may be scrutinized again at the airport, risking repatriation.
-                </p>
-            </div>
-            <div class="div2 hidden">
-                <p>
-                    But it's a great opportunity to attend cutting-edge lectures and talk with other students. You don't
-                    want to miss it.
-                </p>
-            </div>
+            <div class="container">
+                <div class="equal-height">
+                  <div class="textbox">But you have heard that some Chinese students' visas are canceled without warning. If you depart the
+                    United States, you may be scrutinized again at the airport, risking repatriation.</div>
+                  <div class="textbox"> But it's a great opportunity to attend cutting-edge lectures and talk with other students. You don't
+                    want to miss it.</div>
+                </div>
+                </div>
             <div class="div hidden">
                 <p>Students have multiple chances for international academic collaboration during their graduate
                     studies.
@@ -198,19 +194,15 @@
             </p>
             <p>What do you do?</p>
             <div class="button-container">
-                <button class="button" onclick="showNextChoice(this); showText1(this)">Choose this airport</button>
-                <button class="button" onclick="showNextChoice(this); showText2(this)">Choose another airport</button>
+                <button class="button button1" onclick="showNextChoice(this); showText1(this)">Choose this airport</button>
+                <button class="button button2" onclick="showNextChoice(this); showText2(this)">Choose another airport</button>
             </div>
-            <div class="div1 hidden">
-                <p>
-                    What does the visa cancellation have to do with the airport?
-                </p>
-            </div>
-            <div class="div2 hidden">
-                <p>
-                    It may increase the cost of transportation fee and time.
-                </p>
-            </div>
+            <div class="container">
+                <div class="equal-height">
+                  <div class="textbox">What does the visa cancellation have to do with the airport?</div>
+                  <div class="textbox">It may increase the cost of transportation fee and time.</div>
+                </div>
+                </div>
             <div class="div hidden">
                 <p>According to the students, the Customs and Border Protection (CBP) official informed them that they
                     were
@@ -247,18 +239,16 @@
         </p>
         <p>What do you do?</p>
         <div class="button-container">
-            <button class="button" onclick="showNextChoice(this); showText1(this)">No</button>
-            <button class="button" onclick="showNextChoice(this); showText2(this)">Yes</button>
+            <button class="button button1" onclick="showNextChoice(this); showText1(this)">No</button>
+            <button class="button button2" onclick="showNextChoice(this); showText2(this)">Yes</button>
         </div>
-        <div class="div1 hidden">
-            <p>I have passed the language test. My English is good enough to meet daily needs. I didn't use an
-                interpreter the first time I was questioned, and I can handle this one too.
-            </p>
-        </div>
-        <div class="div2 hidden">
-            <p>I'm not a native English speaker after all. I don't want to make any mistakes in my answers.
-            </p>
-        </div>
+        <div class="container">
+            <div class="equal-height">
+              <div class="textbox">I have passed the language test. My English is good enough to meet daily needs. I didn't use an
+                interpreter the first time I was questioned, and I can handle this one too.</div>
+              <div class="textbox">I'm not a native English speaker after all. I don't want to make any mistakes in my answers.</div>
+            </div>
+            </div>
         <div class="div hidden">
             <p>The CBP officer asks you many formalized questions. There were some words you didn't understand.
             </p>
@@ -286,18 +276,16 @@
         <p>What do you do?
         </p>
         <div class="button-container">
-            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
-            <button class="button" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
+            <button class="button button1" onclick="showsign(); showText1(this)">Sign</button>
+            <button class="button button2" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
         </div>
-        <div class="div1 hidden">
-            <p>I just need to reapply for the visa. It's no big deal. Although I did not fully understand what the
-                officials said, I can still get the records and figure it out.
-            </p>
-        </div>
-        <div class="div2 hidden">
-            <p>I don't understand why my visa was canceled. I need to know why before I sign.
-            </p>
-        </div>
+        <div class="container">
+            <div class="equal-height">
+              <div class="textbox">I just need to reapply for the visa. It's no big deal. Although I did not fully understand what the
+                officials said, I can still get the records and figure it out.</div>
+              <div class="textbox">I don't understand why my visa was canceled. I need to know why before I sign.</div>
+            </div>
+            </div>
     </div>
 
     <div class="choices">
@@ -307,17 +295,15 @@
         </p>
         <p>What do you do?</p>
         <div class="button-container">
-            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
-            <button class="button" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
+            <button class="button button1" onclick="showsign(); showText1(this)">Sign</button>
+            <button class="button button2" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
         </div>
-        <div class="div1 hidden">
-            <p>I just need to reapply for the visa. It's no big deal. I can figure out why by asking this department.
-            </p>
-        </div>
-        <div class="div2 hidden">
-            <p>I can't accept what is happening to me.
-            </p>
-        </div>
+        <div class="container">
+            <div class="equal-height">
+              <div class="textbox">I just need to reapply for the visa. It's no big deal. I can figure out why by asking this department.</div>
+              <div class="textbox">I can't accept what is happening to me.</div>
+            </div>
+            </div>
     </div>
 
     <div class="choices">
@@ -329,12 +315,14 @@
         </p>
         <p>What do you do?</p>
         <div class="button-container">
-            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
+            <button class="button button1" onclick="showsign(); showText1(this)">Sign</button>
         </div>
-        <div class="div1 hidden">
-            <p>Life is more precious than a momentary pursuit of justice.
-            </p>
-        </div>
+
+        <div class="container">
+            <div class="equal-height">
+              <div class="textbox">Life is more precious than a momentary pursuit of justice.</div>
+            </div>
+            </div>
         </div>
 
     <div class="choices sign">
@@ -387,8 +375,8 @@
         <p>Which year are you in your PhD?
         </p>
         <div class="button-container">
-            <button class="button" onclick="showText1(this)">First year</button>
-            <button class="button" onclick="showText2(this)">The last year</button>
+            <button class="button button1" onclick="showText1(this)">First year</button>
+            <button class="button button2" onclick="showText2(this)">The last year</button>
         </div>
         <div class="div1 hidden">
             <p>As a first-year PhD student, you will almost certainly be unable to return to campus to finish your studies. You are prepared to withdraw from this hard-won offer and apply to another university outside of the United States. As for your supervisor, he squandered an opportunity to enroll a PhD student this year.</p>
