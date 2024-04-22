@@ -79,6 +79,7 @@ code {
 
 .full-width figure {
     text-align: center;
+    height: 80%;
 }
 
 /* margin on mobile */
@@ -166,3 +167,24 @@ button:hover {
     display: flex; /* 启用Flexbox布局 */
     align-items: stretch; /* 使所有子元素高度相同 */
   }
+
+  .with-image-bg{
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: white;
+            text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .with-image-bg {
+            background-image: url('img/journey.png');
+        }

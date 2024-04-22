@@ -83,6 +83,7 @@
 <body>
     <div class="content">
         <div class="header">
+            
             <h1>The canceled visa: what has shut out graduate students from the border</h1>
             <p class="subhead">This journey is based on interviews and real stories of Chinese students who had their
                 visa canceled and repatriated while studying in the US.</p>
@@ -110,13 +111,22 @@
 
         <div class="choices">
             <h2>Choose your character</h2>
+            <div style="display: flex; justify-content: center">
+                <img src="img/character.png" style="width:70%;margin-bottom:20px;">
+              </div>
             <h3>Select your gender to start the journey</h3>
             <div class="button-container">
                 <button class="button" onclick="showNextChoice(this); showText1(this)">Male</button>
                 <button class="button" onclick="showNextChoice(this); showText2(this)">Female</button>
             </div>
+            <div class="div1 hidden">
+                <p>Being a male graduate student may result in a lower chance of having your visa canceled.</p>
+            </div>
+            <div class="div2 hidden">
+                <p>Being a female graduate student may result in a greater chance of having your visa canceled.</p>
+            </div>
             <div class="div hidden">
-                <p>Being a female graduate student may result in a greater chance of having her visa canceled.</p>
+               
                 <p>According to an unofficial database crowdsourced by the banned students, all of the instances that
                     occurred during the winter of 2023 only involved female students.
                 </p>
@@ -127,14 +137,20 @@
 
         <div class="choices">
             <h3>Choose your major</h3>
+            <p>STEM stands for Science, Technology, Engineering, and Math.</p>
             <div class="button-container">
                 <button class="button" onclick="showNextChoice(this); showText1(this)">STEM</button>
                 <button class="button" onclick="showNextChoice(this); showText2(this)">non-STEM</button>
             </div>
-            <div class="div hidden">
+            <div class="div1 hidden">
                 <p>STEM majors are more likely to be checked when applying for a visa, which means research experience
                     will be further examined for national security concerns.
                 </p>
+            </div>
+            <div class="div2 hidden">
+                <p>Non-STEM majors may be considered less likely to be denied a visa. But that's not always the case.</p>
+            </div>
+            <div class="div hidden">
                 <p>The “Technology Alert List” is a U.S. State Department document that defines sensitive major fields,
                     which includes most hard sciences such as nuclear technology, physics, engineering, chemistry, and
                     aviation, and others like architecture and urban planning.</p>
@@ -157,6 +173,9 @@
             <p>Today, your mentor informs you: "There is an annual international conference in the field in Europe.
                 Everyone in the lab is going. Expenses will be covered."
             </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="img/conference.png" style="width:70%; margin-bottom:20px;">
+              </div>
             <p>What do you do?</p>
             <div class="button-container">
                 <button class="button button1" onclick="showNextChoice(this); showText1(this)">Attend the conference</button>
@@ -210,6 +229,9 @@
                     same
                     female officer with blonde hair at Dulles International Airport.
                 </p>
+                <div style="display: flex; justify-content: center;">
+                    <img src="img/counter.png" style="width:70%; margin-bottom:20px;">
+                  </div>
                 <p>On January 29, the Chinese Embassy in the United States delivered a message that particularly pointed
                     out
                     Dulles International Airport. Chinese students are advised to carefully select their airport to
@@ -235,12 +257,15 @@
         <p>You sit and wait after a flight over 10 hours, alone. You can not use any electronic devices, which are
             preserved and checked by the officer.
         </p>
+        <div style="display: flex; justify-content: center;">
+            <img src="img/wait.png" style="width:70%; margin-bottom:20px;">
+          </div>
         <p>Finally, you're called in for a second round of questioning. “Do you need a translator?” The officer asked.
         </p>
         <p>What do you do?</p>
         <div class="button-container">
-            <button class="button button1" onclick="showNextChoice(this); showText1(this)">No</button>
-            <button class="button button2" onclick="showNextChoice(this); showText2(this)">Yes</button>
+            <button class="button button1" onclick="showNextChoice(this); showText1(this)">No, I don't need it.</button>
+            <button class="button button2" onclick="showNextChoice(this); showText2(this)">Yes, I need a translator</button>
         </div>
         <div class="container">
             <div class="equal-height">
@@ -267,6 +292,9 @@
         </h2>
         <p>After a lot of formal yes-or-no questions, the officer asks you: “Do you know that your visa is canceled?”
         </p>
+        <div style="display: flex; justify-content: center;">
+            <img src="img/suprise.png" style="width:70%; margin-bottom:20px;">
+          </div>
         <p>“WHAT?!” You exclaimed.</p>
         <p>“It will be fine. You can apply for the visa again after returning home, and it will be quick.” The officer
             said.
@@ -326,6 +354,9 @@
         </div>
 
     <div class="choices sign">
+        <div style="display: flex; justify-content: center;">
+            <img src="img/plane.png" style="width:70%; margin-bottom:20px;">
+          </div>
         <p>You won't get your phone back until the repatriation plane lands. After checking, you discover that you have
             been banned from entering the United States for five years.
         </p>
@@ -346,9 +377,9 @@
         <div class="collapsible-text">
             <p>You receive a Form I-213 of your records. 
             </p>
-            <p>The document falsely claims that you failed to disclose your master's degree from a Chinese university on your résumé, and that you are currently undertaking postdoctoral research at a US university. 
+            <p>The document <span style="background-color: rgb(252, 84, 78);">falsely</span> claims that you failed to disclose your <span style="background-color: yellow;">master</span>'s degree from a Chinese university on your résumé, and that you are currently undertaking <span style="background-color: yellow;">postdoctoral</span> research at a US university. 
             </p>
-            <p>In fact, you only have an undergraduate degree and are currently pursuing a PhD degree.
+            <p>In fact, you only have an <span style="background-color: yellow;">undergraduate</span> degree and are currently pursuing a <span style="background-color: yellow;">PhD</span> degree.
             </p>
         </div>
         <button type="button" class="collapsible" onclick="showNext(this); showLastChoice(this)">Lodge a complaint directly with the CBP (Customs and Border Protection)</button>
@@ -386,6 +417,7 @@
             </p>
             </div>
     </div>
+
 
     <div class="footer">
             <p>You can find the code for this story <a href="https://github.com/yc4330/the-visa-journey/">here</a>.
