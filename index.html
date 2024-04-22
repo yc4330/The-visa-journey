@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The canceled visa: what has shut out graduate students from the border</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        function showNextChoice(button) {
+            // Get the parent element
+            let nextElement = button.parentElement.parentElement.nextElementSibling;
+
+            if (nextElement) {
+                nextElement.style.display = 'block'; // Set the display to 'block'
+            }
+        }
+
+        function showsign() {
+            let sign = document.querySelector('.sign');
+            sign.style.display = 'block';
+        }
+
+        function showLastChoice(button) {
+            // Get the parent element
+            let nextElement = button.parentElement.nextElementSibling;
+
+            if (nextElement) {
+                nextElement.style.display = 'block'; // Set the display to 'block'
+            }
+        }
+
+        function showText1(button) {
+            let parentElement = button.parentElement.parentElement;
+            let div1 = parentElement.querySelector('.div1');
+            let div2 = parentElement.querySelector('.div2');
+            let div = parentElement.querySelector('.div');
+            if (div1) {
+                div1.style.display = 'block';
+            }
+            if (div2) { // Set the display to 'block'
+                div2.style.display = 'none';
+            }
+            if (div) {
+            div.style.display = 'block';}
+        }
+
+        function showText2(button) {
+            let parentElement = button.parentElement.parentElement;
+            let div1 = parentElement.querySelector('.div1');
+            let div2 = parentElement.querySelector('.div2');
+            let div = parentElement.querySelector('.div');
+            if (div1) {
+                div1.style.display = 'none';
+            }
+            if (div2) {
+                div2.style.display = 'block';
+            } // Set the display to 'block'
+            if (div) {
+            div.style.display = 'block';}
+        }
+
+        function showNext(button) {
+                button.classList.toggle("active");
+                var showcontent = button.nextElementSibling;
+                if (showcontent.style.display === "block") {
+                    showcontent.style.display = "none";
+                } else {
+                    showcontent.style.display = "block";
+                }
+            }
+        
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>The canceled visa: what has shut out graduate students from the border</h1>
+            <p class="subhead">This journey is based on interviews and real stories of Chinese students who had their
+                visa canceled and repatriated while studying in the US.</p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://yc4330.github.io/">Yuqi Cheng</a></p>
+        </div>
+        <p>Over the last three months, more than a dozen PhD students from renowned colleges, including Yale and Johns
+            Hopkins, have been denied re-entry to the country, with some facing a five-year-ban. For some students, this
+            means stepping out of the PhD program entirely.
+        </p>
+        <p>The students have been trying to figure out why their visas were canceled without notice. Appealing has not
+            given them a clear answer. Some believe it is due to the aftermath of the China Initiative and President
+            Proclamation 10043, which aimed to ferret out spies from the science community.
+        </p>
+        <p>If you are a Chinese student coming to the U.S for graduate school, what choices would you make when faced
+            with the uncertainty of visa validity? Take this journey to understand the feeling of increased scrutiny at
+            the border.</p>
+
+        <div>
+            <div class="button-container">
+                <button onclick="showNextChoice(this)">Start</button>
+            </div>
+        </div>
+
+        <div class="choices">
+            <h2>Choose your character</h2>
+            <h3>Select your gender to start the journey</h3>
+            <div class="button-container">
+                <button class="button" onclick="showNextChoice(this); showText1(this)">Male</button>
+                <button class="button" onclick="showNextChoice(this); showText2(this)">Female</button>
+            </div>
+            <div class="div hidden">
+                <p>Being a female graduate student may result in a greater chance of having her visa canceled.</p>
+                <p>According to an unofficial database crowdsourced by the banned students, all of the instances that
+                    occurred during the winter of 2023 only involved female students.
+                </p>
+                <p>However, male students were also included in the next batch of repatriated students, which occurred
+                    around March 2024.</p>
+            </div>
+        </div>
+
+        <div class="choices">
+            <h3>Choose your major</h3>
+            <div class="button-container">
+                <button class="button" onclick="showNextChoice(this); showText1(this)">STEM</button>
+                <button class="button" onclick="showNextChoice(this); showText2(this)">non-STEM</button>
+            </div>
+            <div class="div hidden">
+                <p>STEM majors are more likely to be checked when applying for a visa, which means research experience
+                    will be further examined for national security concerns.
+                </p>
+                <p>The “Technology Alert List” is a U.S. State Department document that defines sensitive major fields,
+                    which includes most hard sciences such as nuclear technology, physics, engineering, chemistry, and
+                    aviation, and others like architecture and urban planning.</p>
+                <p>However, three of the four students being repatriated in half a month are from the non-sensitive
+                    major.
+                </p>
+                <p>Many of the blocked students are studying medicine or biology, such as MRI medical imaging. This
+                    could be
+                    due to the NIH's investigation of undisclosed foreign ties to NIH grants.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="choices">
+            <h2>Everytime aboard is like a gamble
+            </h2>
+            <p>You obtain a valid F1 student visa and spend three months in the United States conducting PhD research.
+                University life is fantastic.</p>
+            <p>Today, your mentor informs you: "There is an annual international conference in the field in Europe.
+                Everyone in the lab is going. Expenses will be covered."
+            </p>
+            <p>What do you do?</p>
+            <div class="button-container">
+                <button class="button" onclick="showNextChoice(this); showText1(this)">Attend the conference</button>
+                <button class="button" onclick="showNextChoice(this); showText2(this)">Stay in the lab</button>
+            </div>
+            <div class="div1 hidden">
+                <p>
+                    But you have heard that some Chinese students' visas are canceled without warning. If you depart the
+                    United States, you may be scrutinized again at the airport, risking repatriation.
+                </p>
+            </div>
+            <div class="div2 hidden">
+                <p>
+                    But it's a great opportunity to attend cutting-edge lectures and talk with other students. You don't
+                    want to miss it.
+                </p>
+            </div>
+            <div class="div hidden">
+                <p>Students have multiple chances for international academic collaboration during their graduate
+                    studies.
+                    Despite this, many people are anxious about the visa issue. Many students avoid traveling abroad as
+                    much
+                    as possible, and some do not return to China to see their parents for five years.
+                </p>
+                <p>You check the visa application website and confirm that you did not receive any text messages or
+                    emails
+                    about visa status. You decide to go.
+                </p>
+            </div>
+        </div>
+
+        <div class="choices">
+            <h2>Does airport matter
+            </h2>
+            <p>The conference is over and you are feeling refreshed. You are booking your flight back. The nearest
+                airport to the university is Dulles International Airport at Washington D.C.
+            </p>
+            <p>However, you heard at least four cases of graduate students being sent back to China at this airport.
+            </p>
+            <p>What do you do?</p>
+            <div class="button-container">
+                <button class="button" onclick="showNextChoice(this); showText1(this)">Choose this airport</button>
+                <button class="button" onclick="showNextChoice(this); showText2(this)">Choose another airport</button>
+            </div>
+            <div class="div1 hidden">
+                <p>
+                    What does the visa cancellation have to do with the airport?
+                </p>
+            </div>
+            <div class="div2 hidden">
+                <p>
+                    It may increase the cost of transportation fee and time.
+                </p>
+            </div>
+            <div class="div hidden">
+                <p>According to the students, the Customs and Border Protection (CBP) official informed them that they
+                    were
+                    not in charge of canceling their visa. However, in December 2023, all deported students faced the
+                    same
+                    female officer with blonde hair at Dulles International Airport.
+                </p>
+                <p>On January 29, the Chinese Embassy in the United States delivered a message that particularly pointed
+                    out
+                    Dulles International Airport. Chinese students are advised to carefully select their airport to
+                    prevent
+                    "unwarranted interrogation, harassment, and even repatriation" by border officers.
+                </p>
+                <p>In March, however, the deported cases were also happening from other airports.
+                </p>
+            </div>
+        </div>
+
+
+
+    <div class="choices">
+        <h2>Do you need a translator
+        </h2>
+        <p>At the airport, you give your passport to a border officer for inspection. The officer takes a box and locks
+            your passport in it. "Take this, go there and wait."
+        </p>
+        <p>You hold the box and follow him to the second inspection region, a place you've never heard of. It’s similar
+            to the check-in counter, but with rows of chairs in the hall.
+        </p>
+        <p>You sit and wait after a flight over 10 hours, alone. You can not use any electronic devices, which are
+            preserved and checked by the officer.
+        </p>
+        <p>Finally, you're called in for a second round of questioning. “Do you need a translator?” The officer asked.
+        </p>
+        <p>What do you do?</p>
+        <div class="button-container">
+            <button class="button" onclick="showNextChoice(this); showText1(this)">No</button>
+            <button class="button" onclick="showNextChoice(this); showText2(this)">Yes</button>
+        </div>
+        <div class="div1 hidden">
+            <p>I have passed the language test. My English is good enough to meet daily needs. I didn't use an
+                interpreter the first time I was questioned, and I can handle this one too.
+            </p>
+        </div>
+        <div class="div2 hidden">
+            <p>I'm not a native English speaker after all. I don't want to make any mistakes in my answers.
+            </p>
+        </div>
+        <div class="div hidden">
+            <p>The CBP officer asks you many formalized questions. There were some words you didn't understand.
+            </p>
+            <p>In fact, none of the students being questioned asked to use a translator. In retrospect, they think it
+                was because they did not realize the importance of this round of questioning.
+            </p>
+            <p>When deciding to not use the translator, they were not aware that their visas were being canceled
+                already, and “this may be your only opportunity to present information to the officer and the Department
+                of Homeland Security to make a decision”, as the record of the sworn statement reads.
+            </p>
+        </div>
+    </div>
+
+    <div class="choices">
+        <h2>Do you agree to sign
+        </h2>
+        <p>After a lot of formal yes-or-no questions, the officer asks you: “Do you know that your visa is canceled?”
+        </p>
+        <p>“WHAT?!” You exclaimed.</p>
+        <p>“It will be fine. You can apply for the visa again after returning home, and it will be quick.” The officer
+            said.
+        </p>
+        <p>You are instructed to sign your name on an electronic board.
+        </p>
+        <p>What do you do?
+        </p>
+        <div class="button-container">
+            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
+            <button class="button" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
+        </div>
+        <div class="div1 hidden">
+            <p>I just need to reapply for the visa. It's no big deal. Although I did not fully understand what the
+                officials said, I can still get the records and figure it out.
+            </p>
+        </div>
+        <div class="div2 hidden">
+            <p>I don't understand why my visa was canceled. I need to know why before I sign.
+            </p>
+        </div>
+    </div>
+
+    <div class="choices">
+        <p>“We are not the ones who canceled your visa.” The officer said. “I don't know why either. We are just
+            following the rules. You can not enter the United States without a valid visa. You can ask the U.S.
+            Citizenship and Immigration Services (USCIS) after you return to your country.”
+        </p>
+        <p>What do you do?</p>
+        <div class="button-container">
+            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
+            <button class="button" onclick="showNextChoice(this); showText2(this)">Refuse to sign</button>
+        </div>
+        <div class="div1 hidden">
+            <p>I just need to reapply for the visa. It's no big deal. I can figure out why by asking this department.
+            </p>
+        </div>
+        <div class="div2 hidden">
+            <p>I can't accept what is happening to me.
+            </p>
+        </div>
+    </div>
+
+    <div class="choices">
+        <p>The officer takes you from the hall to a separate room to talk. You realize that this is what is called a
+            "little dark room” by students.
+        </p>
+        <p>“You know, ” The officer said, “We just caught a foreign spy last week. We gave him an injection. He told us
+            everything in the end.”
+        </p>
+        <p>What do you do?</p>
+        <div class="button-container">
+            <button class="button" onclick="showsign(); showText1(this)">Sign</button>
+        </div>
+        <div class="div1 hidden">
+            <p>Life is more precious than a momentary pursuit of justice.
+            </p>
+        </div>
+        </div>
+
+    <div class="choices sign">
+        <p>You won't get your phone back until the repatriation plane lands. After checking, you discover that you have
+            been banned from entering the United States for five years.
+        </p>
+        <p>The officer doesn't tell you anything about the ban. You feel duped since you are unable to reapply for a
+            visa, as you were informed when you signed.
+        </p>
+        <p>In addition, the officer didn't inform you of the right to withdraw the entry application, which in theory
+            would not result in a punitive five-year ban.
+        </p>
+        <h2>The appeal path</h2>
+        <p>You are repatriated to the country of the international conference because it is where your ticket
+            originated. From there you fly back to China, and consult lawyers at your own expense.
+        </p>
+        <p>For several months, you try to figure out why your visa was canceled by following various options.
+        </p>
+
+        <button type="button" class="collapsible" onclick="showNext(this); showLastChoice(this)">Submit a FOIA request to the U.S. Citizenship and Immigration Services (USCIS)</button>
+        <div class="collapsible-text">
+            <p>You receive a Form I-213 of your records. 
+            </p>
+            <p>The document falsely claims that you failed to disclose your master's degree from a Chinese university on your résumé, and that you are currently undertaking postdoctoral research at a US university. 
+            </p>
+            <p>In fact, you only have an undergraduate degree and are currently pursuing a PhD degree.
+            </p>
+        </div>
+        <button type="button" class="collapsible" onclick="showNext(this); showLastChoice(this)">Lodge a complaint directly with the CBP (Customs and Border Protection)</button>
+        <div class="collapsible-text">
+            <p>Your inquiry is swiftly closed without any form of response.
+            </p>
+        </div>
+        <button type="button" class="collapsible" onclick="showNext(this); showLastChoice(this)">Seek recourse through the DHS TRIP (the Department of Homeland Security Traveler Redress Inquiry Program)</button>
+        <div class="collapsible-text">
+            <p>You receive a letter from CBP that simply reiterates your denial of entry due to an invalid visa, without providing further explanation for your visa cancellation.
+            </p>
+        </div>
+        <button type="button" class="collapsible" onclick="showNext(this); showLastChoice(this)">Seek the assistance of a congressman office</button>
+        <div class="collapsible-text">
+            <p>You receive a letter from CBP that simply reiterates your denial of entry due to an invalid visa, without providing further explanation for your visa cancellation.
+            </p>
+        </div>
+    </div>
+
+    <div class="choices">
+        <h2>The consequences</h2>
+        <p>Four months later, You haven't received any meaningful feedback. 
+        </p>
+        <p>Which year are you in your PhD?
+        </p>
+        <div class="button-container">
+            <button class="button" onclick="showText1(this)">First year</button>
+            <button class="button" onclick="showText2(this)">The last year</button>
+        </div>
+        <div class="div1 hidden">
+            <p>As a first-year PhD student, you will almost certainly be unable to return to campus to finish your studies. You are prepared to withdraw from this hard-won offer and apply to another university outside of the United States. As for your supervisor, he squandered an opportunity to enroll a PhD student this year.</p>
+            </div>
+        <div class="div2 hidden">
+            <p>You have already finished the majority of the work required for your PhD degree, but there is still some research that can be done online. Your mentor was successful in convincing the school that you may continue your thesis defense remotely. 
+            </p>
+            </div>
+    </div>
+
+    <div class="footer">
+            <p>You can find the code for this story <a href="https://github.com/yc4330/the-visa-journey/">here</a>.
+    </div>
+</body>
+
+</html>
